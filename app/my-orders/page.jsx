@@ -33,11 +33,11 @@ const MyOrders = () => {
                         {orders.map((order, index) => (
                             <div key={index} className="flex flex-col md:flex-row gap-5 justify-between p-5 border-b border-gray-300">
                                 <div className="flex-1 flex gap-5 max-w-80">
-                                    <Image
+                                    {/* <Image
                                         className="max-w-16 max-h-16 object-cover"
                                         src={assets.box_icon}
                                         alt="box_icon"
-                                    />
+                                    /> */}
                                     <p className="flex flex-col gap-3">
                                         <span className="font-medium text-base">
                                             {order.items.map((item) => item.product.name + ` x ${item.quantity}`).join(", ")}
